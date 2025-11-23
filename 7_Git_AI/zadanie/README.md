@@ -30,16 +30,6 @@ git pull
 git checkout -b feature/add-szczecin-scraping
 ```
 
-### **B. Stwórz brancha dla refaktoru workflow:**
-
-Po ukończeniu pierwszego etapu:
-
-```
-git checkout develop
-git pull
-git checkout -b feature/refactor-workflow-matrix
-```
-
 ---
 
 # **2. Etap 1 — Dodanie Szczecin do obecnego workflow**
