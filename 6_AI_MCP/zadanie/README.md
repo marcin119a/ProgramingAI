@@ -25,7 +25,6 @@ Aktualnie w serwerze MCP istnieją dwa proste endpointy:
      * `rooms` (liczba pokoi, int),
      * `area_m2` (powierzchnia w m², float),
      * `locality` (dzielnica, str),
-     * `street` (ulica, str),
      * `photos` (liczba zdjęć w ogłoszeniu, int),
    * przygotowywał ramkę danych (`pandas.DataFrame`) z tymi parametrami,
    * kodował zmienne kategoryczne w taki sam sposób jak w procesie trenowania,
