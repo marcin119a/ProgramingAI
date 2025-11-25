@@ -6,7 +6,7 @@ Twoim zadaniem jest rozszerzenie istniejącego serwera **FastMCP** o nowy endpoi
 
 Masz już działający kod, który:
 
-* czyści dane z pliku CSV (`adresowo_warszawa_wroclaw.csv`),
+* czyści dane z pliku CSV (`.csv`),
 * trenuje model `RandomForestRegressor`,
 * zapisuje model do pliku `model.pkl`,
 * potrafi go wczytać i wykorzystać do predykcji.
