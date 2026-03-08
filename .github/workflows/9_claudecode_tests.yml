@@ -1,10 +1,18 @@
-name: Tests
+name: "9_ClaudeCode Tests"
 
 on:
   push:
     branches: [main]
+    paths:
+      - "9_ClaudeCode/**"
   pull_request:
     branches: [main]
+    paths:
+      - "9_ClaudeCode/**"
+
+defaults:
+  run:
+    working-directory: 9_ClaudeCode
 
 jobs:
   test:
