@@ -60,7 +60,6 @@ Plik powinien zawierać:
 
 Przykład:
 
-```markdown
 # AI Skills for this Repository
 
 ## Architecture
