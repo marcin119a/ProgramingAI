@@ -1,14 +1,3 @@
-Poniżej masz **kompletne zadanie warsztatowe**, które łączy:
-
-* **Claude Code**
-* **komendy `/`**
-* **rozbudowany `SKILLS.md`**
-* **ewolucyjną architekturę**
-* **refaktoryzację i modularność aplikacji**
-
-Nadaje się bardzo dobrze na **warsztat 45–60 min dla programistów**.
-
----
 
 # Zadanie warsztatowe
 
