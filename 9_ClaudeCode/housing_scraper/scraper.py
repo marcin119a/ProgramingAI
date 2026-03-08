@@ -1,16 +1,15 @@
-import csv
 import time
 from pathlib import Path
 
 import requests
 
+from export import save_csv
 from parser import parse_listings
 
 BASE_URL = "https://adresowo.pl"
 PAGES_URL = "https://adresowo.pl/mieszkania/lodz/_l{page}"
 FIRST_PAGE_URL = "https://adresowo.pl/mieszkania/lodz/_l1"
 OUTPUT_CSV = Path(__file__).parent / "adresowo_lodz.csv"
-FIELDNAMES = ["id", "url", "locality", "rooms", "area_m2", "price_total_zl", "price_per_m2_zl"]
 PAGES = range(1, 9)  # _l1 to _l8
 DELAY_SECONDS = 1.5
 
@@ -28,14 +27,6 @@ def fetch_html(url: str, timeout: int = 20) -> str:
     response = requests.get(url, headers=headers, timeout=timeout)
     response.raise_for_status()
     return response.text
-
-
-def save_csv(listings: list[dict], path: Path) -> None:
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
-        writer.writeheader()
-        writer.writerows(listings)
-    print(f"Saved {len(listings)} listings to {path}")
 
 
 def scrape_all_pages() -> list[dict]:
