@@ -32,3 +32,18 @@ export
 tests
 
 Avoid large monolithic files.
+
+
+## Continuous Integration
+
+This project uses GitHub Actions for automated testing.
+
+Workflow file:
+
+.github/workflows/tests.yml
+
+Pipeline steps:
+
+1. install dependencies
+2. run pytest
+3. verify tests pass
