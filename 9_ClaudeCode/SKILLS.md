@@ -17,3 +17,18 @@ Libraries used:
 
 ## CSV Export
 Export all results in UTF-8 encoded CSV files.
+
+# AI Skills for this Repository
+
+## Architecture
+
+The project follows modular architecture.
+
+Modules:
+
+scraper
+processing
+export
+tests
+
+Avoid large monolithic files.

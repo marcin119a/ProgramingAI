@@ -1,21 +1,12 @@
-import csv
 from pathlib import Path
 
 from openpyxl import Workbook
 from openpyxl.styles import Font
 from openpyxl.utils import get_column_letter
 
+
 DEFAULT_FIELDNAMES = ["id", "url", "locality", "rooms", "area_m2", "price_total_zl", "price_per_m2_zl"]
 NUMERIC_FIELDS = {"rooms", "area_m2", "price_total_zl", "price_per_m2_zl"}
-
-
-def save_csv(listings: list[dict], path: Path, fieldnames: list[str] | None = None) -> None:
-    fieldnames = fieldnames or DEFAULT_FIELDNAMES
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(listings)
-    print(f"Saved {len(listings)} listings to {path}")
 
 
 def save_xlsx(listings: list[dict], path: Path, fieldnames: list[str] | None = None) -> None:

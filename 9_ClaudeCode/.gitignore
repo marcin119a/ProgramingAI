@@ -24,3 +24,6 @@ housing_scraper/inspect_html.py
 
 # macOS
 .DS_Store
+
+# data files
+*.csv

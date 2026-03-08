@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from parser import parse_listings
+from housing_app.scraper.parser import parse_listings
 
 SAMPLE_HTML = Path(__file__).parent / "fixtures" / "sample_page.html"
 
